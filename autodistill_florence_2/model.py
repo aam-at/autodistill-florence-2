@@ -97,7 +97,7 @@ class Florence2(DetectionBaseModel):
             self.processor,
             self.model,
             image,
-            "A photo of " + ", and ".join(ontology_classes) + ".",
+            ", ".join(ontology_classes) + ".",
         )
 
         results = result["<CAPTION_TO_PHRASE_GROUNDING>"]
